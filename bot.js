@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+const prefix = "$";
 /////////////////////////
 ////////////////////////
 
@@ -315,8 +315,8 @@ function play(guild, song) {
 client.on('message', message => {
     if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('1help')
-        .setDescription('1')
+        .setTitle('اوامر البوت')
+        .setDescription('$')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
