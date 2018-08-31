@@ -330,6 +330,39 @@ client.on('message', message => {
     }
 });
 
+
+
+client.on('message', message => {
+     if (message.content === "1help") {
+message.author.send("** [❖═════1play═══════❖]**" + `  **
+
+❖ 1play : لتشغيل اغنية
+❖ 1join : دخول رومك الصوتي
+❖ 1disconnect : مطور البوت
+❖ skip : تخطي الأغنية
+❖ pause : ايقاف الاغنية مؤقتا
+❖ resume : تكملة الاغنية
+❖ queue : اظهار قائمة التشغيل
+❖ np : اظهار الاغنية اللي انت مشغلها حاليا
+❖ general_commands : اظهار الاوامر العامة
+
+
+
+**`);
+    }
+});     
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
     if (message.content === 'general_commands') {
         let helpEmbed = new Discord.RichEmbed()
